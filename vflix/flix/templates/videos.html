@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block content %}
+{% for i in videos %}
+<h1>{{i.title}}</h1>
+{% if i.video %}
+<a href="{% url 'seasons' i.vid %}"><video src="{{i.video.url}}" controls ></video></a>
+{% endif %}
+<p><big>{{i.category.cname}}</big></p>
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,4 @@
+SECRET_KEY=django-insecure-uf-nv=^_45xy8%fmaj-rggh8vpg93jyu!ngv1$%2h&7hc^!dav
+DEBUG =True
+ALLOWED_HOSTS=127.0.0.1
+MONGODB_URI= mongodb+srv://mlvijayalakshmiloganathan_db_user:jB3jzwtINY3cuedj@cluster0.vfufdf8.mongodb.net/?appName=Cluster0

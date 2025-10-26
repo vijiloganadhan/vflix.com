@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{% block content %}
+{% for i in seasons %}
+<h1>{{i.snum}}</h1>
+{% if i.simage %}
+<a href="{% url 'episodes' i.sid %}"><img src="{{i.simage.url}}" alt="{{i.snum}}'s image not found"></a>
+{% endif %}
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% block content %}
+{% for i in cat%}
+<h1>{{i.cname}}</h1>
+{% if i.poster %}
+<a href="{% url 'videos' i.cid %}"><img src="{{i.poster.url}}" alt="{{i.cname}}'s image not found "></a>
+{% endif %}
+{% endfor %}
+<div>
+    {% for j in videos %}
+    <h1>{{j.title}}</h1>
+    {% if j.video %}
+    <video src="{{j.video.url}}" controls ></video>
+    {% endif %}
+    <p><big>{{j.category.cname}}</big></p>
+    {% endfor %}
+</div>
+{% endblock content %}
